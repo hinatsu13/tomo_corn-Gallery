@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000">
+<defs>
+<filter id="paper"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3"/><feColorMatrix values="0 0 0 0 0.5  0 0 0 0 0.45  0 0 0 0 0.4  0 0 0 0.08 0"/><feComposite in2="SourceGraphic" operator="in"/></filter>
+<filter id="soft"><feGaussianBlur stdDeviation="17"/></filter>
+</defs>
+<rect width="100%" height="100%" fill="#FBF3E0"/>
+<g filter="url(#soft)"><ellipse cx="176" cy="217" rx="157" ry="231" fill="#F2CF63" opacity="0.59"/><ellipse cx="641" cy="418" rx="257" ry="242" fill="#8DB07A" opacity="0.46"/><ellipse cx="237" cy="307" rx="172" ry="137" fill="#E9A07A" opacity="0.78"/><ellipse cx="445" cy="573" rx="262" ry="258" fill="#F2CF63" opacity="0.61"/><ellipse cx="617" cy="418" rx="168" ry="159" fill="#8DB07A" opacity="0.78"/></g>
+<path d="M0 620 Q 300 540 600 620 T 1000 590 V 1000 H 0 Z" fill="#E9A07A" opacity="0.55"/>
+<rect width="100%" height="100%" fill="#FBF3E0" filter="url(#paper)"/>
+</svg>
