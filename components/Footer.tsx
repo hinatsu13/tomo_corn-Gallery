@@ -9,11 +9,13 @@ export default function Footer() {
         </span>
         <span>
           {site.socials.map((s) => (
-            <a key={s.href} href={s.href} target="_blank" rel="noopener noreferrer">
-              {s.label}
-            </a>
+            <span key={s.href}>
+              <a href={s.href} target="_blank" rel="noopener noreferrer">
+                {s.label}
+              </a>
+              {" · "}
+            </span>
           ))}
-          {" · "}
           <a href={`mailto:${site.email}`}>Email</a>
         </span>
       </div>

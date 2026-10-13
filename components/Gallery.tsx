@@ -35,7 +35,7 @@ export default function Gallery({ artworks }: { artworks: SizedArtwork[] }) {
     [visible.length],
   );
 
-  // Keep the URL in sync so a single piece can be linked to (e.g. from Instagram).
+  // Keep the URL in sync so a single piece can be linked to (e.g. from X).
   useEffect(() => {
     if (current) history.replaceState(null, "", `#${current.id}`);
     else if (location.hash) history.replaceState(null, "", location.pathname);

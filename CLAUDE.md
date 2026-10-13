@@ -53,11 +53,11 @@ Navigation: **Work · Commissions · About · Contact**, plus a "Commission me" 
 - Short, friendly bio and optional artist statement
 
 ### Contact
-- Email and social links (Instagram is especially important)
+- Email and social links: X (most important) and YouTube. No Instagram.
 
 ## Guidelines for building
 - Keep layouts simple and spacious. When in doubt, remove rather than add.
-- Must work well on mobile; most visitors will arrive from Instagram on a phone.
+- Must work well on mobile; most visitors will arrive from X on a phone.
 - Optimize images for fast loading, but keep enough resolution to show detail.
 - Add descriptive alt text to every artwork image.
 - Keep the playful details small so the overall feel stays calm.

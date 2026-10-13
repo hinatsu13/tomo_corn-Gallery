@@ -29,7 +29,7 @@ export default function CommissionsPage() {
       <p className="lede">
         {isOpen
           ? "I'd love to paint or draw something just for you: a pet, a character, a place that matters to you."
-          : "Commissions are closed right now. Follow me on Instagram to hear when they reopen."}
+          : "Commissions are closed right now. Follow me on X to hear when they reopen."}
       </p>
       {isOpen && (
         <a href="#inquire" className="btn" style={{ marginTop: "0.5rem" }}>
@@ -102,7 +102,7 @@ export default function CommissionsPage() {
             Commissions are closed for now, but you&apos;re welcome to{" "}
             <a href={`mailto:${site.email}`}>email me</a> or follow along on{" "}
             <a href={site.socials[0].href} target="_blank" rel="noopener noreferrer">
-              Instagram
+              X
             </a>
             .
           </p>

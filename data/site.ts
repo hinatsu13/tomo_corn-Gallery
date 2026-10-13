@@ -3,10 +3,10 @@
 export const site = {
   name: "tomo_corn",
   tagline: "Painter & illustrator making quiet, cozy pictures.",
-  email: "hello@tomocorn.art", // TODO: replace with the real address
+  email: "tomocorn.contact@gmail.com",
   socials: [
-    { label: "Instagram", handle: "@tomo_corn", href: "https://instagram.com/tomo_corn" },
-    // { label: "X / Twitter", handle: "@tomo_corn", href: "https://x.com/tomo_corn" },
+    { label: "X", handle: "@tomonari_corn", href: "https://x.com/tomonari_corn" },
+    { label: "YouTube", handle: "@tomo_corn", href: "https://www.youtube.com/@tomo_corn" },
   ],
 };
 
