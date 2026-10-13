@@ -8,6 +8,8 @@ export const site = {
     { label: "X", handle: "@tomonari_corn", href: "https://x.com/tomonari_corn" },
     { label: "YouTube", handle: "@tomo_corn", href: "https://www.youtube.com/@tomo_corn" },
   ],
+  /** The "Commission me" button in the header. Set to true to show it again. */
+  showCommissionButton: false,
 };
 
 export type CommissionStatus = "open" | "closed";

@@ -241,6 +241,9 @@ main {
   .header-inner {
     gap: 0.5rem;
   }
+  .logo {
+    margin-right: auto;
+  }
   .menu-toggle {
     display: inline-flex;
   }

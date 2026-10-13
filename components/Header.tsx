@@ -43,9 +43,11 @@ export default function Header() {
           ))}
         </nav>
 
-        <Link href="/commissions#inquire" className="btn header-cta">
-          Commission me
-        </Link>
+        {site.showCommissionButton && (
+          <Link href="/commissions#inquire" className="btn header-cta">
+            Commission me
+          </Link>
+        )}
 
         <button
           className="menu-toggle"
