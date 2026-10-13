@@ -14,7 +14,7 @@ export default function AboutPage() {
           {/* TODO: replace /studio.svg with a real photo of the artist or workspace */}
           <Image
             src="/studio.svg"
-            alt="The artist's sunny studio desk with a painting in progress, a jar of brushes, and a window behind."
+            alt="The artist's sunny desk by a window."
             width={900}
             height={1100}
             sizes="(max-width: 760px) 100vw, 45vw"
@@ -27,16 +27,16 @@ export default function AboutPage() {
         <div>
           <h1>About me</h1>
           <p className="lede">
-            Hi! I&apos;m {site.name}, a painter and illustrator who likes small, quiet moments: morning light, sleepy
-            cats, and the corner of a messy kitchen.
+            Hi! I&apos;m {site.name}, an anime-style illustrator who likes drawing characters in small, happy moments:
+            a day at the beach, breakfast on the stove, a plushie held close.
           </p>
           <p>
-            I work mostly in gouache, watercolor and oil, and draw digitally for illustration work. Most of my paintings
-            start as tiny sketches in a pocket notebook, and a few of them grow up into finished pieces.
+            I draw digitally, and only in an anime style. Most of my work is fan art of characters I love, plus my own
+            characters, chibis, and the occasional silly comic.
           </p>
           <p>
-            When I&apos;m not painting, I&apos;m probably walking somewhere with a sketchbook, drinking too much tea, or
-            looking at other people&apos;s gardens.
+            When I&apos;m not drawing, I&apos;m probably playing games, watching anime, or collecting more characters to
+            draw next.
           </p>
 
           <blockquote className="statement">

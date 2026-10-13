@@ -6,7 +6,7 @@ import { commissions, site } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Commissions",
-  description: `Commission a painting or illustration from ${site.name}. Prices, process, and turnaround.`,
+  description: `Commission an anime-style illustration from ${site.name}. Prices, process, and turnaround.`,
 };
 
 export default function CommissionsPage() {
@@ -28,7 +28,7 @@ export default function CommissionsPage() {
       </h1>
       <p className="lede">
         {isOpen
-          ? "I'd love to paint or draw something just for you: a pet, a character, a place that matters to you."
+          ? "I'd love to draw something just for you in my anime style: your OC, a favorite character, or your pet."
           : "Commissions are closed right now. Follow me on X to hear when they reopen."}
       </p>
       {isOpen && (

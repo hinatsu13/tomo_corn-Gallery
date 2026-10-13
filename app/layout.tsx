@@ -10,7 +10,7 @@ const body = DM_Sans({ subsets: ["latin"], variable: "--font-body" });
 const hand = Caveat({ subsets: ["latin"], variable: "--font-hand", weight: "500" });
 
 export const metadata: Metadata = {
-  title: { default: `${site.name} | painter & illustrator`, template: `%s | ${site.name}` },
+  title: { default: `${site.name} | anime-style illustrator`, template: `%s | ${site.name}` },
   description: site.tagline,
   openGraph: { title: site.name, description: site.tagline, type: "website" },
 };

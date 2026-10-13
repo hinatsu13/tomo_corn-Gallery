@@ -1,8 +1,8 @@
 # CLAUDE.md — Artist Portfolio Website
 
 ## Project overview
-A portfolio website for a painter and illustrator. The site has two goals:
-1. **Show the artwork** (painting and illustration; starting with ~10 pieces, and more will be added over time)
+A portfolio website for an anime-style digital illustrator. The site has two goals:
+1. **Show the artwork** (anime-style illustration only; starting with ~10 pieces, and more will be added over time)
 2. **Get commission inquiries.** The Commissions page is the most important page for this.
 
 ## Design direction
@@ -65,12 +65,12 @@ Navigation: **Work · Commissions · About · Contact**, plus a "Commission me" 
 ## Open questions
 - [x] Artist / brand name: **tomo_corn**
 - [x] Accent color: **dusty blue** `#6F8BA4` (use `#557189` for text/buttons to meet contrast)
-- [x] Paintings vs illustrations: **one combined grid with filter chips** (All / Paintings / Illustrations)
+- [x] Paintings vs illustrations: **anime-style illustration only**, one grid with no category filter
 - [ ] Commission types and prices (placeholders in `data/site.ts`)
 - [x] Tech stack: **Next.js (App Router, TypeScript)**; hosting TBD (Vercel is the natural fit)
 
 ## Where things live
 - `data/artworks.ts`: every artwork (image path, title, medium, size, year, alt text, story). Add as many as you like; pixel sizes are read from the image files automatically (`data/getArtworks.ts`)
 - `data/site.ts`: name, email, socials, commission status/slots/prices/process/will-won't draw
-- `public/art/`: artwork images (currently generated placeholders from `npm run placeholders`)
+- `public/art/`: artwork images (the artist's real drawings, JPG)
 - `components/Doodles.tsx`: corn mascot + hand-drawn underline (swap for the artist's real doodles)

@@ -1,5 +1,6 @@
 // Generates soft placeholder "paintings" in /public/art so the layout can be
-// previewed before real artwork is added. Safe to delete once real images exist.
+// previewed before real artwork is added. The site now uses real artwork, so
+// this is only needed for the About page's studio placeholder.
 import { writeFileSync, mkdirSync } from "node:fs";
 
 const pieces = [

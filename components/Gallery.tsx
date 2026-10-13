@@ -2,27 +2,16 @@
 
 import Image from "next/image";
 import { useCallback, useEffect, useRef, useState } from "react";
-import type { Category } from "@/data/artworks";
 import type { SizedArtwork } from "@/data/getArtworks";
-
-type Filter = "all" | Category;
-
-const filters: { value: Filter; label: string }[] = [
-  { value: "all", label: "All" },
-  { value: "painting", label: "Paintings" },
-  { value: "illustration", label: "Illustrations" },
-];
 
 // SVG placeholders can't go through Next's optimizer; real JPG/PNG files will.
 const isSvg = (src: string) => src.endsWith(".svg");
 
-export default function Gallery({ artworks }: { artworks: SizedArtwork[] }) {
-  const [filter, setFilter] = useState<Filter>("all");
+export default function Gallery({ artworks: visible }: { artworks: SizedArtwork[] }) {
   const [index, setIndex] = useState<number | null>(null);
   const dialogRef = useRef<HTMLDialogElement>(null);
   const touchX = useRef<number | null>(null);
 
-  const visible = filter === "all" ? artworks : artworks.filter((a) => a.category === filter);
   const current = index === null ? null : visible[index];
 
   const open = useCallback((i: number) => {
@@ -43,9 +32,9 @@ export default function Gallery({ artworks }: { artworks: SizedArtwork[] }) {
 
   useEffect(() => {
     const id = decodeURIComponent(location.hash.slice(1));
-    const i = artworks.findIndex((a) => a.id === id);
+    const i = visible.findIndex((a) => a.id === id);
     if (i >= 0) open(i);
-  }, [artworks, open]);
+  }, [visible, open]);
 
   useEffect(() => {
     if (index === null) return;
@@ -59,14 +48,6 @@ export default function Gallery({ artworks }: { artworks: SizedArtwork[] }) {
 
   return (
     <>
-      <div className="filters" role="group" aria-label="Filter artwork">
-        {filters.map((f) => (
-          <button key={f.value} className="chip" aria-pressed={filter === f.value} onClick={() => setFilter(f.value)}>
-            {f.label}
-          </button>
-        ))}
-      </div>
-
       <div className="masonry">
         {visible.map((art, i) => (
           <button key={art.id} className="tile" onClick={() => open(i)} aria-label={`View ${art.title}`}>

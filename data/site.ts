@@ -2,7 +2,7 @@
 
 export const site = {
   name: "tomo_corn",
-  tagline: "Painter & illustrator making quiet, cozy pictures.",
+  tagline: "Anime-style illustrator drawing characters, fan art, and cozy little moments.",
   email: "tomocorn.contact@gmail.com",
   socials: [
     { label: "X", handle: "@tomonari_corn", href: "https://x.com/tomonari_corn" },
@@ -20,26 +20,26 @@ export const commissions = {
   types: [
     {
       name: "Sketch",
-      description: "Clean pencil or ink sketch, one character, simple background.",
+      description: "Rough anime-style sketch, one character, bust-up, light color.",
       price: "from $40",
     },
     {
-      name: "Illustration",
-      description: "Full color illustration, up to two characters, simple scene.",
-      price: "from $120",
+      name: "Chibi",
+      description: "Cute chibi character in full color, great for icons and stickers.",
+      price: "from $60",
     },
     {
-      name: "Painting",
-      description: "Original gouache or watercolor on paper, shipped to you.",
-      price: "from $220",
+      name: "Illustration",
+      description: "Full color anime-style illustration, up to two characters, simple background.",
+      price: "from $120",
     },
   ],
   steps: [
     { title: "Inquire", text: "Tell me your idea, size, and timeline using the form below." },
     { title: "Sketch", text: "I send a rough sketch. A 50% deposit starts the work." },
     { title: "Revisions", text: "Up to two rounds of changes at the sketch stage." },
-    { title: "Final", text: "I finish the piece and send the files (or ship the original)." },
+    { title: "Final", text: "I finish the piece and send the full-size files." },
   ],
-  willDraw: ["Original characters", "Pets and animals", "Fan art", "Cozy scenes and food", "Landscapes"],
-  wontDraw: ["NSFW", "Hateful or political content", "Heavy mecha or complex machinery", "Copying another artist's style"],
+  willDraw: ["Original characters", "Pets and animals", "Fan art", "Chibi and mascots", "Cozy scenes and food"],
+  wontDraw: ["NSFW", "Hateful or political content", "Heavy mecha or complex machinery", "Realism or styles other than anime"],
 };
